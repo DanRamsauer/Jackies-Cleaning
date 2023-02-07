@@ -18,7 +18,7 @@
         <section>
             <div class="wrapper">
                 <h1>Jackie's Cleaning Service</h1>
-                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="A picture of someone cleaning">
+                <!-- <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="A picture of someone cleaning"> -->
             </div>
         </section>
     </header>
@@ -39,20 +39,25 @@
                 <ul>
                     <div class="leftServices">
                         <li>
+                            <img src="./assets/vaccum-cleaner.png" alt="an icon of a vaccum cleaner">
                             <p>floors</p>
                         </li>
                         <li>
+                            <img src="./assets/brush.png" alt="an icon of a duster">
                             <p>dusting</p>
                         </li>
                         <li>
+                            <img src="./assets/sink.png" alt="an icon of a sink">
                             <p>bathrooms</p>
                         </li>
                     </div>
                     <div class="rightServices">
                         <li>
+                            <img src="./assets/blinds.png" alt="an icon of blinds to a window">
                             <p>blinds</p>
                         </li>
                         <li>
+                            <img src="./assets/pngwing.com.png" alt="a image of a baseboard">
                             <p>baseboards</p>
                         </li>
                     </div>
@@ -65,14 +70,44 @@
                 <h3>Request an estimate</h3>
                 <form action="">
 
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" name="name" placeholder="Name" required>
+                    <label for="name" class="sr-only">Full Name</label>
+                    <input type="text" name="name" placeholder="Name*" required>
 
                     <label for="email" class="sr-only">Name</label>
-                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="text" name="email" placeholder="Email*" required>
 
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+                    <div id="formServices">
+
+                        <div>
+                            <label for="service1">Floors</label>
+                            <input type="checkbox" id="service1" name="service1" value="floors">
+                        </div>
+                        
+                        <div>
+                        
+                            <label for="service2">Dusting</label>
+                            <input type="checkbox" id="service2" name="service2" value="dusting">
+                        </div>
+                        
+                        <div>
+                        
+                            <label for="service3">Bathrooms</label>
+                            <input type="checkbox" id="service3" name="service3" value="bathrooms">
+                        </div>
+                        
+                        <div>
+                            <label for="service4">Blinds</label>
+                            <input type="checkbox" id="service4" name="service4" value="blinds">
+                        </div>
+                        
+                        <div>
+                        
+                            <label for="service5">Baseboards</label>
+                            <input type="checkbox" id="service5" name="service5" value="baseboards">
+                        </div>
+
+                    </div>
 
                     <button id="submit" type="submit">Send</button>
 

@@ -1,14 +1,10 @@
 header{
-    h1{
-        position: absolute;
-        top: 0;
-    }
-    img{
-        height: 50vh;
-    }
+    height: 50vh;
 }
 
 .experience{
+    margin: 100px;
+
     div{
         display: flex;
         flex-direction: row;
@@ -31,9 +27,19 @@ header{
         align-items: center;
         text-transform: capitalize;
     }
+    img{
+        width: 50px;
+        margin: 0 10px 0 0;
+    }
+    li{
+        display: flex;
+        list-style: none;
+        margin: 30px;
+    }
 }
 
 .contact{
+    margin-bottom: 100px;
     form{
         display: flex;
         flex-direction: column;
@@ -47,6 +53,12 @@ header{
     }
     h3{
         font-size: 2.1rem;
+    }
+
+    #formServices{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
