@@ -38,6 +38,7 @@ header{
 
     h2{
         font-size: 2.4rem;
+        text-transform: capitalize;
     }
     p,
     h2{
@@ -48,7 +49,6 @@ header{
     .experience{
         display: flex;
         flex-direction: row;
-        text-transform: capitalize;
         width: 100%;
     }
     p{
@@ -92,7 +92,7 @@ header{
 }
 
 .contact{
-    margin-bottom: 100px;
+    padding: 60px 0;
     form{
         display: flex;
         flex-direction: column;

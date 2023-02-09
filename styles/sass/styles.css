@@ -262,6 +262,7 @@ header h1 {
 }
 .about h2 {
   font-size: 2.4rem;
+  text-transform: capitalize;
 }
 .about p,
 .about h2 {
@@ -272,7 +273,6 @@ header h1 {
 .about .experience {
   display: flex;
   flex-direction: row;
-  text-transform: capitalize;
   width: 100%;
 }
 .about p {
@@ -314,7 +314,7 @@ header h1 {
 }
 
 .contact {
-  margin-bottom: 100px;
+  padding: 60px 0;
 }
 .contact form {
   display: flex;
