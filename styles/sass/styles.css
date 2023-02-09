@@ -222,7 +222,33 @@ html {
 }
 
 header {
-  height: 50vh;
+  background-color: #D3FFEB;
+}
+header li {
+  list-style: none;
+  text-transform: capitalize;
+  color: black;
+  margin: 0 20px 0 0;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+header a {
+  font-size: 1.3rem;
+}
+header video {
+  height: 80vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header h1 {
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-size: 3rem;
 }
 
 .experience {
