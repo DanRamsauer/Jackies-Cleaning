@@ -306,6 +306,10 @@ header h1 {
 .services p {
   font-size: 1.3rem;
 }
+.services .aboutServices p {
+  width: 520px;
+  text-transform: none;
+}
 
 .testimonials {
   background-color: gray;
