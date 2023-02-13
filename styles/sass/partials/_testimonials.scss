@@ -66,6 +66,13 @@
         max-width: 100%;
         place-items: center;
         gap: 1.3rem;
+
+        p{
+            width: 50%;
+        }
+        h4{
+            font-size: 1.4rem;
+        }
     }
     .reviewName{
         letter-spacing: 0.5rem;
@@ -74,5 +81,9 @@
     .reviewBody{
         max-width: 550px;
         margin: auto;
+    }
+    .reviewStars{
+        color: black;
+        z-index: 20;
     }
 }

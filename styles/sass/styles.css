@@ -231,7 +231,7 @@ html {
 }
 
 header {
-  background-color: #D3FFEB;
+  background: url(../../assets/pattern.svg);
   margin-bottom: -10px;
 }
 header li {
@@ -264,10 +264,9 @@ header h1 {
 .about {
   padding-top: 50px;
   padding-bottom: 100px;
-  background-color: gray;
+  background: url(../../assets/pattern.svg);
   width: 100%;
   height: 100%;
-  color: white;
 }
 .about h2 {
   font-size: 2.4rem;
@@ -387,6 +386,12 @@ header h1 {
   place-items: center;
   gap: 1.3rem;
 }
+.testimonials .review p {
+  width: 50%;
+}
+.testimonials .review h4 {
+  font-size: 1.4rem;
+}
 .testimonials .reviewName {
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
@@ -394,6 +399,10 @@ header h1 {
 .testimonials .reviewBody {
   max-width: 550px;
   margin: auto;
+}
+.testimonials .reviewStars {
+  color: black;
+  z-index: 20;
 }
 
 .contact {
