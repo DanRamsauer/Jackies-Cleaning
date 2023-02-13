@@ -221,6 +221,15 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 header {
   background-color: #D3FFEB;
   margin-bottom: -10px;
@@ -312,9 +321,79 @@ header h1 {
 }
 
 .testimonials {
-  background-color: gray;
+  background-color: lightblue;
   padding: 100px;
-  color: white;
+  background-image: url(../../assets/pattern.svg);
+  min-height: 50vh;
+}
+.testimonials .reviewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.testimonials .reviewContainer {
+  background-color: white;
+  border-radius: 0.5rem;
+  position: relative;
+  text-align: center;
+}
+.testimonials .reviewHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 0;
+  font-size: 1.8rem;
+}
+.testimonials .reviewHeader h2 {
+  position: relative;
+}
+.testimonials .reviewContent {
+  position: relative;
+  max-width: 750px;
+  width: calc(100vw - 4rem);
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+.testimonials .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  padding: 0.4rem;
+  z-index: 10;
+  transition: all 300 ms ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+.testimonials .arrow:is(:hover, :focus) {
+  color: gray;
+}
+.testimonials #arrowRight {
+  right: 4%;
+}
+.testimonials #arrowLeft {
+  left: 4%;
+}
+.testimonials .reviews {
+  display: flex;
+}
+.testimonials .review {
+  padding: 0 2rem 2rem;
+  flex: 1 0 100%;
+  display: grid;
+  max-width: 100%;
+  place-items: center;
+  gap: 1.3rem;
+}
+.testimonials .reviewName {
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+.testimonials .reviewBody {
+  max-width: 550px;
+  margin: auto;
 }
 
 .contact {
@@ -338,13 +417,4 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.wrapper {
-  max-width: 1580px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

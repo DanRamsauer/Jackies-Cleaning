@@ -1,0 +1,78 @@
+.testimonials{
+    background-color: lightblue;
+    padding: 100px;
+    background-image: url(../../assets/pattern.svg);
+    min-height: 50vh;
+
+    .reviewContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .reviewContainer{
+        background-color: white;
+        border-radius: .5rem;
+        position: relative;
+        text-align: center;
+    }
+    .reviewHeader{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding: 2rem 2rem 0;
+
+        h2{
+            position: relative;
+        }
+        font-size: 1.8rem;
+    }
+    .reviewContent{
+        position: relative;
+        max-width: 750px;
+        width: calc(100vw - 4rem);
+        padding: 0.5rem 0;
+        overflow: hidden;
+    }
+    .arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        padding: .4rem;
+        z-index: 10;
+        transition: all 300 ms ease-in-out;
+        cursor: pointer;
+        border: none;
+    }
+    .arrow:is(:hover, :focus){
+        color: gray;
+    }
+    #arrowRight{
+        right: 4%;
+    }
+    #arrowLeft{
+        left: 4%;
+    }
+    .reviews{
+        display: flex;
+    }
+    .review{
+        padding: 0 2rem 2rem;
+        flex: 1 0 100%;
+        display: grid;
+        max-width: 100%;
+        place-items: center;
+        gap: 1.3rem;
+    }
+    .reviewName{
+        letter-spacing: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .reviewBody{
+        max-width: 550px;
+        margin: auto;
+    }
+}
